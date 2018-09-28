@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meet Simplete</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./styles/css/global.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/header.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/hover.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/intro.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/breakout.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/plan-picker.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/card.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/table.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/dropdown.css">
+	<style>
+		
+		@font-face {
+			font-family:"Museo-Sans-100";
+			src: url("./styles/fonts/MuseoSans_100.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-300";
+			src: url("./styles/fonts/MuseoSans_300.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-500";
+			src: url("./styles/fonts/MuseoSans_500.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-700";
+			src: url("./styles/fonts/MuseoSans_700.ttf");
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<nav>
+				<div class="container">
+					<img src="./assets/simplete.png">
+					<div class="inner-container">
+						<a href="/home" class="current">Home</a>
+						<a href="/about-us">About Us</a>
+						<a href="/contact-broker">Contact Broker</a>
+						<a href="/get-in-touch" class="get-in-touch">Get in Touch</a>
+						<a href="/get-a-quote" class="get-a-quote">Get a Quote</a>
+					</div>
+				</div>
+			</nav>
+			<div class="text-container">
+				<h1>Are you a small business owner who wants more from their insurance?<span><br>Meet Simplete.</span></h1>
+			</div>
+		</div>
+		<div class="arrow-container">
+			<img src="./assets/logos/arrow.png" class="arrow">
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="container">
+			<p class="small-header">Brought to you by</p>
+			<h2>Memorial Health System</h2>
+			<p class="intro-text">Simplete is a simple solution for complete coverage. Through a partnership with Health Alliance, Simplete puts the power of insurance decisions in the hands of Memorial, a trusted healthcare leader, to help decrease costs and provide patients better, more convenient care.</p>
+			<p class="zip-text">Find small group health insurance plans in your area</p>
+			<div class="zip-container">
+				<input type="text" name="zipcode" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'">
+				<button class="zipcode-button">Find Plans</button>
+			</div>
+		</div>
+		<article class="video-container">
+			<div class="video"></div>
+			<div class="white-box">
+				<div class="text-container">
+					<h2>Simplete in 60 Seconds</h2>
+					<p class="intro-text">Take a minute to see all the ways Simplete, a new idea in health insurance from Memorial Healthcare System, can bring you more. And if you like what you see, enter your information to see how much you can save with Simplete.</p>
+					<img src="./assets/simplete-memorial.png" class="simplete-memorial">
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section class="breakout">
+		<div class="wrapper">
+			<div class="container">
+				<div class="left">
+					<h2>With Simplete, you get <strong>more.</strong></h2>
+					<div class="breakout-box first">
+						<h3>More Value</h3>
+						<p>with lower in-network costs. By coordinating the communication between caregivers, less layers of contact are needed; saving time and money.</p>
+					</div>
+					<div class="breakout-box">
+						<h3>More Peace of Mind</h3>
+						<p>with a Nurse Concierge, a single point of contact for patients to inquire about medical information, care coordination, billing and coverage requirements.</p>
+					</div>
+				</div>
+				<div class="right">
+					<div class="breakout-box">
+						<h3>More Perks</h3>
+						<p>for primary care. With Simplete, there are no fees for primary care, and patients have 24/7 access to virtual visits, ideal for common illnesses.</p>
+					</div>
+					<div class="breakout-box">
+						<h3>More Focus on You</h3>
+						<p>with decisions in the hands of Memorial and the doctors everyone’s working together to ensure patients get the best care and results possible.</p>
+					</div>
+					<div class="breakout-box">
+						<h3>More Opportunities</h3>
+						<p>for healthy living. Simplete not only helps you when you’re sick, but can help you stay well, through prevention screenings and fitness program discounts.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="troxell">
+		<div class="wrapper">
+			<div class="container">
+				<img src="./assets/troxell.png" class="troxell">
+				<h2>Troxell is Memorial Simplete's preferred insurance broker</h2>
+			</div>
+		</div>
+	</section>
+
+	<section class="plan-picker">
+		<div class="wrapper">
+			<div class="container">
+				<p class="small-header">Find a plan</p>
+				<h2>2018 Small Group Direct Plans</h2>
+				<p class="intro-text">Simplete plans are comprised of tiered-provider network. The amount employees pay out of pocket for servces and treatment depends on the provider they see.</p>
+			</div>
+
+			<div class="filter-container">
+				<div class="plan-filter-container">
+					<h3>Plan Type</h3>
+					<div class="HMO-container filter 1 noSelect" value="HMO">HMO</div>
+					<div class="POS-container filter 1 noSelect" value="POS">POS</div>
+					<div class="HSA-container filter 1 noSelect" value="HSA">HSA</div>
+				</div>
+				<div class="metal-filter-container">
+					<h3>Metal Level</h3>
+					<div class="platinum-container filter 2" value="platinum">Platinum</div>
+					<div class="gold-container filter 2 noSelect" value="gold">Gold</div>
+					<div class="silver-container filter 2 noSelect" value="silver">Silver</div>
+					<div class="bronze-container filter 2 noSelect" value="bronze">Bronze</div>
+				</div>
+			</div>
+
+			<div class="card-container">
+				<div class="card HMO platinum active" data-1="HMO" data-2="platinum">
+					<div class="left">
+						<h3>HMO 100 Platinum</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$100</td>
+								<td class="price">$300</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$200</td>
+								<td class="price">$600</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$2,000</td>
+								<td class="price">$3,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$10,000</td>
+								<td class="price">N/A</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card HMO platinum active" data-1="HMO" data-2="platinum">
+					<div class="left">
+						<h3>HMO 250 Platinum</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$250</td>
+								<td class="price">$500</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$200</td>
+								<td class="price">$1,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$2,500</td>
+								<td class="price">$5,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$10,000</td>
+								<td class="price">N/A</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card HMO platinum active" data-1="HMO" data-2="platinum">
+					<div class="left">
+						<h3>HMO 750 Platinum</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$750</td>
+								<td class="price">$1,500</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$1,500</td>
+								<td class="price">$3,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$2,500</td>
+								<td class="price">$4,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$8,000</td>
+								<td class="price">N/A</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card HMO gold active" data-1="HMO" data-2="gold">
+					<div class="left">
+						<h3>HMO 2000 Gold</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$2,000</td>
+								<td class="price">$3,500</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$4,000</td>
+								<td class="price">$7,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$4,000</td>
+								<td class="price">$7,900</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$8,000</td>
+								<td class="price">$15,800</td>
+								<td class="price">N/A</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card HMO HSA bronze active" data-1="HMO" data-2="bronze" data-3="HSA">
+					<div class="left">
+						<h3>HMO 3500 HSA Bronze</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$3,500</td>
+								<td class="price">$5,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$7,000</td>
+								<td class="price">$10,000</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$6,750</td>
+								<td class="price">$6,750</td>
+								<td class="price">N/A</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$13,000</td>
+								<td class="price">$13,500</td>
+								<td class="price">N/A</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card POS platinum active" data-1="POS" data-2="platinum">
+					<div class="left">
+						<h3>POS 750 Platinum</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$750</td>
+								<td class="price">$1,500</td>
+								<td class="price">$3,000</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$1,500</td>
+								<td class="price">$3,000</td>
+								<td class="price">$6,000</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$2,500</td>
+								<td class="price">$4,000</td>
+								<td class="price">$15,000</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$8,000</td>
+								<td class="price">$31,000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card POS gold active" data-1="POS" data-2="gold">
+					<div class="left">
+						<h3>POS 1500 Gold</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$1,500</td>
+								<td class="price">$3,000</td>
+								<td class="price">$6,000</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$3,000</td>
+								<td class="price">$6,000</td>
+								<td class="price">$12,000</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$4,500</td>
+								<td class="price">$7,000</td>
+								<td class="price">$18,500</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$9,000</td>
+								<td class="price">$14,000</td>
+								<td class="price">$37,000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card POS silver active" data-1="POS" data-2="silver">
+					<div class="left">
+						<h3>POS 2500 Silver</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$2,500</td>
+								<td class="price">$4,000</td>
+								<td class="price">$8,000</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$8,000</td>
+								<td class="price">$16,000</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$5,000</td>
+								<td class="price">$7,900</td>
+								<td class="price">$20,500</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$10,000</td>
+								<td class="price">$15,800</td>
+								<td class="price">$41,000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+				<div class="card POS bronze active" data-1="POS" data-2="bronze">
+					<div class="left">
+						<h3>POS 4500 Bronze</h3>
+						<h4>Simplete Memorial</h4>
+						<table cellspacing="0">
+							<tr>
+								<th></th>
+								<th>Tier 1</th>
+								<th>Tier 2</th>
+								<th>Tier 3</th>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Deductible</td>
+								<td class="price first">$4,500</td>
+								<td class="price">$7,000</td>
+								<td class="price">$14,000</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Deductible</td>
+								<td class="price first">$9,000</td>
+								<td class="price">$14,000</td>
+								<td class="price">$28,000</td>
+							</tr>
+							<tr class="grey">
+								<td class="table-text">Individual Out-of-Pocket Max</td>
+								<td class="price first">$7,900</td>
+								<td class="price">$7,900</td>
+								<td class="price">$26,500</td>
+							</tr>
+							<tr>
+								<td class="table-text">Family Out-of-Pocket Max</td>
+								<td class="price first">$15,800</td>
+								<td class="price">$15,800</td>
+								<td class="price">$53,000</td>
+							</tr>
+						</table>
+					</div>
+					<div class="right">
+						<div class="dropdown">
+  							<button class="dropbtn"><img src="./assets/logos/documents.png" class="dropdown-icon"><span>Plan Details</span></button>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+						</div>
+						<div class="button-container">
+							<button class="providers-button">View Providers</button>
+							<button class="enroll-button">Enroll</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
+		</div>
+		
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/filter.js"></script>
+
+</body>
+
+</html>
