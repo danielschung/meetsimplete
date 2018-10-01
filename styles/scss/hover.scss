@@ -1,15 +1,12 @@
 @import 'global';
 
 //header
-nav a:hover {
-	
-}
 
-a.get-in-touch:hover {
+div.inner-container a.get-in-touch:hover {
 	border:1px $white solid;
 }
 
-a.get-a-quote:hover {
+div.inner-container a.get-a-quote:hover {
 	border:1px $purple solid;
 	background-color:$purple;
 }

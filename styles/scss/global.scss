@@ -1,18 +1,22 @@
-//colors
+//simplete colors
+$purple:#674186;
+$blue:#1ebaea;
+$yellow:#F1AF2A;
+//text colors
 $white:#ffffff;
 $whiteish:#FAFAFA;
 $black:#090012;
 $text:#6B6777;
-$purple:#674186;
 $light-grey:#C2C2C2;
 $border-grey:#e7e7e7;
-$yellow:#F1AF2A;
+//button colors
 $purple-clear:#7A5399;
 $lightpurple:#B78CDA;
+//card colors
 $cardh4:#585858;
 $table-grey:#F5F5F5;
 $dark-grey:#7e7e7e;
-
+//plan colors
 $platinum:#84BEE8;
 $gold:#E5B54F;
 //silver = light-grey
@@ -36,6 +40,10 @@ div.wrapper {
 	margin:0 auto;
 	max-width:90em;
 	padding:0 2em 0 2em;
+}
+
+section {
+	height:auto;
 }
 
 .hover {

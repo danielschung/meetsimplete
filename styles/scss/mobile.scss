@@ -1,0 +1,71 @@
+@import 'global';
+
+@media only screen and (max-width:1220px) {
+	header {
+		background-position: 0 0;
+		background-size:87em;
+		height:42em;
+	}
+
+	div.wrapper div.text-container {
+		position:relative;
+		float:left;
+		right:0;
+	}
+}
+
+@media only screen and (max-width:917px) {
+	nav .container .inner-container {
+		display:none;
+	}
+
+	header div.wrapper div.container img.mobile-nav {
+		display:block;
+	}
+}
+
+@media only screen and (max-width:848px) {
+	header {
+		background-position: 17% 0;
+	}
+
+}
+
+@media only screen and (max-width:737px) {
+	header {
+		background-position: 53.4% 20%;
+	}
+
+	h1 {
+		font-size:2.5em;
+	}
+
+	div.wrapper div.text-container {
+		float:none;
+		text-align:center;
+		transform:translateY(157%);
+	}
+
+	div.wrapper .text-container h1 {
+		margin:0 auto;
+	}
+
+	section.intro div.container {
+		margin:7.6875em auto 0 auto;
+	}
+
+	article.video-container {
+		border-radius:0.3125em 0.3125em 0 0 ;
+		width:97%;
+	}
+
+	div.video, div.video.back {
+		border-radius:0 0 0.3125em 0.3125em;
+		width:100%;
+	}
+
+	article.video-container div.white-box {
+		width:100%;
+	}
+
+}

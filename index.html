@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./styles/css/global.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/header.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/mobile-nav.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/hover.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/intro.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/breakout.css">
@@ -13,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="./styles/css/card.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/table.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/faq.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/mobile.css">
 	<style>
 		
 		@font-face {
@@ -40,10 +43,25 @@
 
 <body>
 	<header>
+		<div class="nav-reveal">
+			<div class="wrapper">
+				<nav>
+					<div class="open-link-container left">
+						<a href="/home" class="current">Home</a>
+						<a href="/about-us">About Us</a>
+						<a href="/contact-broker">Contact Broker</a>
+						<a href="/get-in-touch" class="get-in-touch">Get in Touch</a>
+						<a href="/get-a-quote" class="get-a-quote">Get a Quote</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
 		<div class="wrapper">
 			<nav>
 				<div class="container">
 					<img src="./assets/simplete.png">
+					<img src="./assets/logos/nav.png" class="mobile-nav">
 					<div class="inner-container">
 						<a href="/home" class="current">Home</a>
 						<a href="/about-us">About Us</a>
@@ -63,18 +81,19 @@
 	</header>
 
 	<section class="intro">
-		<div class="container">
-			<p class="small-header">Brought to you by</p>
-			<h2>Memorial Health System</h2>
-			<p class="intro-text">Simplete is a simple solution for complete coverage. Through a partnership with Health Alliance, Simplete puts the power of insurance decisions in the hands of Memorial, a trusted healthcare leader, to help decrease costs and provide patients better, more convenient care.</p>
-			<p class="zip-text">Find small group health insurance plans in your area</p>
-			<div class="zip-container">
-				<input type="text" name="zipcode" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'">
-				<button class="zipcode-button">Find Plans</button>
+		<div class="wrapper">
+			<div class="container">
+				<p class="small-header">Brought to you by</p>
+				<h2>Memorial Health System</h2>
+				<p class="intro-text">Simplete is a simple solution for complete coverage. Through a partnership with Health Alliance, Simplete puts the power of insurance decisions in the hands of Memorial, a trusted healthcare leader, to help decrease costs and provide patients better, more convenient care.</p>
+				<p class="zip-text">Find small group health insurance plans in your area</p>
+				<div class="zip-container">
+					<input type="text" name="zipcode" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'">
+					<button class="zipcode-button">Find Plans</button>
+				</div>
 			</div>
 		</div>
 		<article class="video-container">
-			<div class="video"></div>
 			<div class="white-box">
 				<div class="text-container">
 					<h2>Simplete in 60 Seconds</h2>
@@ -82,7 +101,15 @@
 					<img src="./assets/simplete-memorial.png" class="simplete-memorial">
 				</div>
 			</div>
+			<a href="https://vimeo.com/291732041/03de67622e" target="_blank">
+				<div class="video back">
+					<div class="video layer">
+						<img src="./assets/play.png" class="play">
+					</div>
+				</div>
+			</a>
 		</article>
+		<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
 	</section>
 
 	<section class="breakout">
@@ -112,8 +139,7 @@
 						<h3>More Opportunities</h3>
 						<p>for healthy living. Simplete not only helps you when you’re sick, but can help you stay well, through prevention screenings and fitness program discounts.</p>
 					</div>
-				</div>
-				
+				</div>	
 			</div>
 		</div>
 	</section>
@@ -623,10 +649,24 @@
 			</div>
 			<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
 		</div>
+	</section>
+
+	<section class="faq">
+		<div class="wrapper">
+			<div class="container">
+				<h2>FAQ's</h2>
+				<p class="intro-text">How can we help you?</p>
+			</div>
+			<div class="faq-box-container">
+				
+			</div>			
+
+		</div>
 		
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/mobile.js"></script>
 	<script type="text/javascript" src="./js/filter.js"></script>
 
 </body>

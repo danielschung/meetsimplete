@@ -1,0 +1,57 @@
+@import 'global';
+
+//mobile nav
+
+nav div.container img.mobile-nav {
+	width:1.7em;
+	display:none;
+	float:right;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	z-index:2;
+}
+
+header div.nav-reveal {
+	display:none;
+	z-index:1;
+}
+
+header div.nav-reveal.open {
+	background-color: rgba(253, 181, 22, 0.95);
+	position:absolute;
+	height:100%;
+	width:100%;
+	display:block;
+}
+
+header div.nav-reveal div.open-link-container {
+	float:right;
+	margin-top:2em;
+}
+
+header div.nav-reveal div.open-link-container a.get-a-quote {
+	background-color:$purple-clear;
+	border:1px $purple-clear solid;
+	border-radius:0.35714286em;
+	color:$white;
+	padding:1.14285714em;
+}
+
+header div.nav-reveal div.open-link-container a.get-in-touch {
+	border:1px $white solid;
+	border-radius:0.35714286em;
+	padding:1.14285714em;
+}
+
+header div.nav-reveal a {
+	display:block;
+	font-size:0.875em;
+	padding:0 0.5em;
+	margin:1.54285714em;
+	@extend .hover;
+}
+
+
+
+

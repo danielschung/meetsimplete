@@ -1,7 +1,7 @@
 @import 'global';
 
-section {
-	height:87.5em;
+section.intro {
+	padding-bottom:117px;
 }
 
 section.intro div.container {
@@ -17,7 +17,7 @@ p.zip-text {
 	margin-top:4.1875em;
 }
 
-.zip-container {
+div.zip-container {
 	margin:1.875em auto 0 auto;
 	max-width:47.6875em;
 	padding:0;
@@ -60,6 +60,7 @@ button.zipcode-button {
 
 article.video-container {
 	border: 1px solid #DBDBDB;
+	border-radius:0.3125em;
 	box-shadow: 15px -9px 28px -13px rgba(189,189,189,0.5);
 	height:33.4375em;
 	margin:10.4375em auto 0 auto;
@@ -67,10 +68,39 @@ article.video-container {
 }
 
 div.video {
-	background-color:#A5A5A5;
+	border-radius:0.3125em 0 0 0.3125em;
 	float:left;
 	height:33.4375em;
+	text-align:center;
+	@extend .hover;
+}
+
+div.video.back {
+	background-image: url("../../assets/video.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:63em;
 	width:50%;
+}
+
+div.video.layer {
+	background-color: rgba(248, 247, 216, 0);
+	width:100%;
+}
+
+div.video img.play {
+	margin:0 auto;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	width:10em;
+}
+
+div.video:hover {
+	background-color:black;
+	div.video.layer {
+		background-color: rgba(14, 14, 14, 0.7);
+	}
 }
 
 article.video-container div.white-box {

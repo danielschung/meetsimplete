@@ -1,4 +1,3 @@
-
 $(document).ready (function() {
 
 	var category_plan = [];
