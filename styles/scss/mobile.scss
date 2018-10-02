@@ -22,11 +22,28 @@
 	header div.wrapper div.container img.mobile-nav {
 		display:block;
 	}
+
+	footer div.wrapper div.container {
+		text-align:center;
+	}
+
+	footer div.wrapper div.container div.inner-container {
+		display:block;
+		float:none;
+		height:2em;
+		margin-top:1em;
+		text-align:center;
+		width:100%;
+	}
 }
 
 @media only screen and (max-width:848px) {
 	header {
 		background-position: 17% 0;
+	}
+
+	section.intro div.container {
+		text-align:left;
 	}
 
 }
@@ -36,14 +53,14 @@
 		background-position: 53.4% 20%;
 	}
 
-	h1 {
-		font-size:2.5em;
+	div.wrapper div.text-container h1 {
+		font-size:7vw;
 	}
 
 	div.wrapper div.text-container {
 		float:none;
 		text-align:center;
-		transform:translateY(157%);
+		transform:translateY(17em);
 	}
 
 	div.wrapper .text-container h1 {
@@ -68,4 +85,30 @@
 		width:100%;
 	}
 
+	img.simplete-logo {
+		width:30vw;
+	}
+
 }
+
+@media only screen and (max-width:695px) {
+	footer div.wrapper div.container {
+		margin-top: -1em;
+	}
+
+	footer div.wrapper div.container div.inner-container {
+		margin-top:-2em;
+		margin-bottom:2em;
+	}
+
+	footer div.wrapper div.container div.inner-container a.footer-item,
+	footer div.wrapper div.container div.inner-container p.footer-item {
+		display:block;
+		margin:0.5em 0;
+	}
+}
+
+
+
+
+

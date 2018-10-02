@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/css/dropdown.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/faq.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/footer.css">
 	<style>
 		
 		@font-face {
@@ -47,11 +48,13 @@
 			<div class="wrapper">
 				<nav>
 					<div class="open-link-container left">
-						<a href="/home" class="current">Home</a>
+						<a href="/" class="current">Home</a>
 						<a href="/about-us">About Us</a>
 						<a href="/contact-broker">Contact Broker</a>
-						<a href="/get-in-touch" class="get-in-touch">Get in Touch</a>
-						<a href="/get-a-quote" class="get-a-quote">Get a Quote</a>
+						<div class="button-container">
+							<a href="/get-in-touch" class="get-in-touch">Get in Touch</a>
+							<a href="/get-a-quote" class="get-a-quote">Get a Quote</a>
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -60,7 +63,7 @@
 		<div class="wrapper">
 			<nav>
 				<div class="container">
-					<img src="./assets/simplete.png">
+					<img src="./assets/simplete.png" class="simplete-logo">
 					<img src="./assets/logos/nav.png" class="mobile-nav">
 					<div class="inner-container">
 						<a href="/home" class="current">Home</a>
@@ -664,6 +667,20 @@
 		</div>
 		
 	</section>
+
+	<footer>
+		<div class="wrapper">
+			<div class="container">
+				<img src="./assets/simplete.png">
+				<div class="inner-container">
+					<a href="https://www.choosememorial.org/" class="footer-item">Memorial Health System</a>
+					<a href="https://www.healthalliance.org/" class="footer-item">Health Alliance</a>
+					<p class="footer-item">©2018 Simplete</p>
+				</div>
+				<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/mobile.js"></script>
