@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Get in Touch</title>
+	<link rel="stylesheet" type="text/css" href="./styles/css/form.css">
+	<link href="https://fonts.googleapis.com/css?family=Krub:300,400,500,700" rel="stylesheet">
+
+<!--We need to have an additional indicator so we know which lead needs to go directly to Troxell and which one will need to go to HA.  The ownership will now default to Web Integration instead of being assigned.  I added both Form ID and Web Source to the form, will either one of these work?  I’ll need to know which field and value for leads that need to go to Troxell so I can assign those leads to the ‘Simplete SMGRP Memorial’ queue using the lead assignment rules. -->
+
+</head>
+<body>
+	<section class="form">
+		<div class="wrapper">
+			<div class="container">
+				<h1>Get In Touch</h1>
+				<h2>Let's talk.</h2>
+				<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+					<input type=hidden name="oid" value="00Dg0000006Ngju">
+					<input type=hidden name="retURL" value="http://healthalliance.org">
+					
+					<!--  ----------------------------------------------------------------------  --> 
+					
+					<!--  NOTE: These fields are optional debugging elements. Please uncomment    --> 
+					
+					<!--  these lines if you wish to test in debug mode.                          --> 
+					
+					<!--  <input type="hidden" name="debug" value=1>                              --> 
+					
+					<!--  <input type="hidden" name="debugEmail"                                  --> 
+					
+					<!--  value="laurie.avery@healthalliance.org">                                --> 
+					
+					<!--  ----------------------------------------------------------------------  -->
+					
+					<h3>1. Personal Information</h3>
+					<div class="inner-container">
+						<input id="first_name" name="first_name" type="text" / placeholder="First Name" class="half">
+						<input id="last_name" name="last_name" type="text" / placeholder="Last Name" class="half right">
+						<input id="email" name="email" type="text" / placeholder="Email" class="half">
+						<input id="phone" name="phone" type="text" / placeholder="Phone" class="half right">
+						<input id="company" name="company" type="text" / placeholder="Company" class="full">
+						<input id="state" name="state" type="text" / placeholder="State/Province" class="half">
+						<input id="city" name="city" type="text" / placeholder="City" class="half right">
+						<input name="street" placeholder="Street" class="half"></input>
+						<input id="zip" name="zip" type="text" / placeholder="Zip" class="half right">
+					</div>
+
+					<h3>2. Lead Information</h3>
+					<div class="inner-container">
+						<select required id="lead_source" name="lead_source" class="half">
+							<option value="" disabled selected>-Lead Source-</option>
+							<option value="AOR Change">AOR Change</option>
+							<option value="Broker">Broker</option>
+							<option value="Consultant">Consultant</option>
+							<option value="Cross Sell">Cross Sell</option>
+							<option value="Current Member">Current Member</option>
+							<option value="D&amp;B">D&amp;B</option>
+							<option value="Direct/Broker">Direct/Broker</option>
+							<option value="Direct Insert">Direct Insert</option>
+							<option value="Direct Sale">Direct Sale</option>
+							<option value="Event">Event</option>
+							<option value="hCentive">hCentive</option>
+							<option value="House Account">House Account</option>
+							<option value="Inbound Call">Inbound Call</option>
+							<option value="Invitation to Re-Enroll">Invitation to Re-Enroll</option>
+							<option value="Judy Diamond">Judy Diamond</option>
+							<option value="ListGiant">ListGiant</option>
+							<option value="Marc My HA 2012">Marc My HA 2012</option>
+							<option value="Marketing Agency">Marketing Agency</option>
+							<option value="MC400 Individual Entry">MC400 Individual Entry</option>
+							<option value="MDI 2006">MDI 2006</option>
+							<option value="NexGen">NexGen</option>
+							<option value="Online Application">Online Application</option>
+							<option value="Previously Quoted">Previously Quoted</option>
+							<option value="Private HIX">Private HIX</option>
+							<option value="Referral - Existing Group">Referral - Existing Group</option>
+							<option value="Referral - Existing Member">Referral - Existing Member</option>
+							<option value="Referral - HAMP">Referral - HAMP</option>
+							<option value="Referral - Web">Referral - Web</option>
+							<option value="RFP">RFP</option>
+							<option value="RFP - Broker">RFP - Broker</option>
+							<option value="RFP - Consultant">RFP - Consultant</option>
+							<option value="RFP - Direct/Broker">RFP - Direct/Broker</option>
+							<option value="Terminated Group">Terminated Group</option>
+							<option value="Web Form">Web Form</option>
+							<option value="Web Form - Simplete">Web Form - Simplete</option>
+						</select>
+
+						<input id="employees" name="employees" type="text" value="" / placeholder="Employees" class="half right">
+
+						<select required id="recordType" name="recordType" class="half">
+							<option value="" disabled selected>-Lead Record Type-</option>
+							<option value="0120P0000005m0C">Content</option>
+							<option value="012U0000000UGjm">Group</option>
+							<option value="012U0000000UGjn">Individual</option>
+							<option value="012U0000000UGjo">Medicare</option>
+						</select>
+
+						<input id="00NU0000001bSbj" maxlength="255" name="00NU0000001bSbj" type="text" / placeholder="Web Source" class="half right">
+
+						<select required id="00NU0000002vtrb" name="00NU0000002vtrb" title="How did you hear about HA?" class="full">
+							<option value="" disabled selected>-How did you hear about HA?-</option>
+							<option value="Health alliance website">Health alliance website</option>
+							<option value="Television commercial">Television commercial</option>
+							<option value="Employer">Employer</option>
+							<option value="Mail received at home">Mail received at home</option>
+							<option value="Internet search">Internet search</option>
+							<option value="Radio commercial">Radio commercial</option>
+							<option value="Friend/family">Friend/family</option>
+							<option value="newspaper">newspaper</option>
+						</select>
+
+						<select required id="00NU0000003Q92L" name="00NU0000003Q92L" title="Lead Type" class="half">
+							<option value="" disabled selected>-Lead Type-</option>
+							<option value="Fully Insured - Small Group (1-50)">Fully Insured - Small Group (1-50)</option>
+							<option value="Fully Insured - Large Group (50+)">Fully Insured - Large Group (50+)</option>
+							<option value="Medicare Group">Medicare Group</option>
+							<option value="Self-Funded">Self-Funded</option>
+						</select>
+
+						<input id="00NU0000002vts2" maxlength="32" name="00NU0000002vts2" type="text" / placeholder="TempOwnerID" class="half right">
+
+						<select required id="00N0P000004xbyZ" name="00N0P000004xbyZ" title="Form ID" class="half">
+							<option value="" disabled selected >-Form ID-</option>
+							<option value="Sample Form ID 1">Sample Form ID 1</option>
+							<option value="Sample Form ID 2">Sample Form ID 2</option>
+						</select>
+
+						<input id="00Ng0000003xLLI" maxlength="15" name="00Ng0000003xLLI" type="text" / placeholder="Tax ID" class="half right">
+
+						<p class="checkbox">
+							<label for="00Ng0000003xaHh">Simplete Group:</label>
+							<input id="00Ng0000003xaHh" name="00Ng0000003xaHh" type="checkbox" value="1" />
+						</p>
+					</div>
+				</form>
+				<button type="submit" name="submit">Submit</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- <footer>
+		<div class="wrapper">
+			<div class="container">
+				<img src="./assets/simplete.png">
+				<div class="inner-container">
+					<a href="https://www.choosememorial.org/" class="footer-item">Memorial Health System</a>
+					<a href="https://www.healthalliance.org/" class="footer-item">Health Alliance</a>
+					<p class="footer-item">©2018 Simplete</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</footer> -->
+
+</body>
+</html>

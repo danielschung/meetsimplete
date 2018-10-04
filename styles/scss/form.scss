@@ -1,0 +1,162 @@
+//simplete colors
+$black:#090012;
+$purple:#674186;
+$light-grey:#C2C2C2;
+$light-purple:#aa93c9;
+$background:#7A5399;
+
+
+// fonts
+$font:"Krub", Helvetica, sans-serif;
+$light:300;
+$regular:400;
+$strong:500;
+$bold:700;
+
+//rules
+html, body, div, header, section, main, footer, h1, h2, h3, h4, p, input, select, button, input, label {
+	font-family:$font;
+	font-size:16px;
+	margin:0;
+	padding:0;
+}
+
+.hover {
+	-o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+body {
+	background-color:$background;
+}
+
+section.form {
+	height:94em;
+	margin:0;
+}
+
+section.form div.wrapper {
+	height:100%;
+	margin:0 auto;
+	max-width:50em;
+	padding:0 1.3em;
+}
+
+section.form h1 {
+	color:white;
+	font-size:2.7em;
+	font-weight:$strong;
+	text-align:center;
+	margin-bottom:0.37em;
+}
+
+section.form h2 {
+	color:white;
+	font-size:1em;
+	font-weight:$light;
+	text-align:center;
+	margin-bottom:5.7em;
+}
+
+section.form h3 {
+	border-bottom:0.1em solid white;
+	color:white;
+	font-weight:$strong;
+	padding-bottom:1em;
+	margin-top:3.125em;
+}
+
+section.form div.wrapper div.container {
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+form div.inner-container {
+	margin:2em auto 0 auto;
+	width:98%;
+	text-align:center;
+}
+
+form input,
+form select {
+	background-color:transparent;
+	border:0px solid;
+	border-bottom:1px solid $light-purple;
+	color:white;
+	font-weight:light;
+	margin:1.7em 0;
+	outline:none;
+}
+
+form select:invalid {
+	color:$light-purple;
+}
+
+form input.right,
+select.right {
+	margin-left:2em;
+}
+
+form input.half,
+select.half {
+	width:45%;
+}
+
+form input:focus {
+	border-bottom:1px solid white;
+}
+
+form input::placeholder,
+p label {
+	color:$light-purple;
+}
+
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover, 
+form input:-webkit-autofill:focus
+form select:-webkit-autofill,
+form select:-webkit-autofill:hover,
+form select:-webkit-autofill:focus {
+  border:0px solid;
+  border-bottom:1px solid $light-purple;
+  font-family:$font;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+form input.full,
+form select.full {
+	width:95%;
+}
+
+form select {
+	border-radius:0;
+	-webkit-appearance:none;
+}
+
+form div.inner-container p.checkbox {
+	text-align:left;
+	margin-left:1.27em;
+}
+
+section.form button {
+	border:1px solid rgba(0, 0, 0, 0);
+	border-radius:0.35714286em;
+	margin:2em auto 0 auto;
+	padding:0.9em 1.14285714em;
+	width:7em;
+	@extend .hover;
+}
+
+
+
+
+
+
+
+
