@@ -13,7 +13,7 @@ section.plan-picker div.wrapper div.card-container div.card {
 	background-color:$white;
 	border:1px solid $border-grey;
 	border-radius:0.25em;
-	height:18.9375em;
+	height:auto;
 	margin-bottom:1.25em;
 	text-align:left;
 	width:100%;
@@ -40,7 +40,6 @@ div.card div.left {
 	padding:2.3em 3em;
 	float:left;
 	min-width:26.3333333em;
-	width:50%;
 }
 
 div.card div.left h3 {

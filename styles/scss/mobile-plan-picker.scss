@@ -1,0 +1,60 @@
+@import 'global';
+
+//mobile rules header and filters
+@media only screen and (max-width:1227px) {
+
+	section.plan-picker div.wrapper div.card-container.mobile {	
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.filter-container {
+		width:90%;
+	}
+
+}
+
+@media only screen and (max-width:990px) {
+
+	section.plan-picker div.wrapper div.card-container.text {
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.filter-container {
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.card-container div.container {
+		text-align:left;
+		max-width:100%;
+	}
+
+}
+
+@media only screen and (max-width:898px) {
+
+	section.plan-picker div.wrapper div.filter-container div.plan-filter-container h3 {
+		margin-right:0.74em;
+	}
+
+	section.plan-picker div.wrapper div.filter-container div.metal-filter-container {
+		float:left;
+		margin:2em 0 1em 0;
+	}
+
+}
+
+//mobile card rules
+@media only screen and (max-width:834px) {
+
+	div.card-container div.card div.left table {
+		width:100%;
+		background-color:blue;
+	}
+
+}
+
+
+
+
+
+

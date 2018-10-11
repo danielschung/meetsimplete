@@ -14,7 +14,7 @@ section.plan-picker div.wrapper {
 	height:auto;
 }
 
-section.plan-picker div.wrapper div.container {
+section.plan-picker div.wrapper div.card-container div.container {
 	padding-top:10.4375em;
 	margin:0 auto;
 	max-width:39.0625em;
@@ -27,8 +27,8 @@ section.plan-picker div.wrapper div.container p.intro-text {
 
 //start filtering div rules
 section.plan-picker div.wrapper div.filter-container {
-	height:5em;
-	margin:4.8125em auto 0 auto;
+	height:auto;
+	margin:4.8125em auto 1.7em auto;
 	max-width:70.0625em;
 	width:73%;
 }
@@ -38,7 +38,6 @@ section.plan-picker div.wrapper div.filter-container div.metal-filter-container 
 	display:inline-block;
 	position:relative;
 	top:50%;
-	transform:translateY(-50%);
 	width:auto;
 }
 

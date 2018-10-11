@@ -62,8 +62,26 @@ img.troxell {
 	width:13.125em;
 }
 
+section.troxell div.wrapper {
+	height:100%;
+}
+
 section.troxell div.wrapper div.container {
-	height:91px;
+	height:5.7em;
+	margin:1em 0;
+	display:inline-block;
+	position:relative;
+	top:50%;
+	transform:translateY(2%);
+}
+
+section.troxell div.wrapper div.container.left {
+	width:20%;
+}
+
+section.troxell div.wrapper div.container.right {
+	float:right;
+	width:auto;
 }
 
 section.troxell div.wrapper div.container h2 {
@@ -71,6 +89,7 @@ section.troxell div.wrapper div.container h2 {
 	font-family:$light;
 	font-size:2.5vw;
 	float:right;
+	line-height:1.47em;
 	position:relative;
 	top:50%;
 	transform:translateY(-50%);
