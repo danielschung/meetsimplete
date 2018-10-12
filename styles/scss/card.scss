@@ -14,9 +14,10 @@ section.plan-picker div.wrapper div.card-container div.card {
 	border:1px solid $border-grey;
 	border-radius:0.25em;
 	height:auto;
-	margin-bottom:1.25em;
+	margin:0 auto 1.25em auto;
+	padding:0 0 0 2.3em;
 	text-align:left;
-	width:100%;
+	width:95%;
 	display:none;
 }
 
@@ -37,9 +38,10 @@ section.plan-picker div.wrapper div.card-container div.card.bronze {
 }
 
 div.card div.left {
-	padding:2.3em 3em;
+	margin:2.3em auto;
 	float:left;
 	min-width:26.3333333em;
+	width:50%;
 }
 
 div.card div.left h3 {

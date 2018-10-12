@@ -46,9 +46,29 @@
 //mobile card rules
 @media only screen and (max-width:834px) {
 
-	div.card-container div.card div.left table {
-		width:100%;
-		background-color:blue;
+	div.card-container div.card div.left {
+		width:95%;
+	}
+
+	div.card-container div.card div.right {
+		width:92%;
+		height:5em;
+		float:left;
+		padding:2.3em 0 2.5em 1em;
+	}
+
+	div.card-container div.card div.right div.dropdown {
+		float:left;
+		margin:0;
+		position:relative;
+		transform:translateY(27%);
+	}
+
+	div.card-container div.card div.right div.button-container {
+		float:right;
+		margin:0;
+		position:relative;
+		transform:translateY(-32%);
 	}
 
 }
