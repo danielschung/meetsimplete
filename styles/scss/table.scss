@@ -6,13 +6,16 @@ div.card div.left table {
 	font-family:$light;
 	font-size:0.9375em;
 	text-align:center;
-	min-width:30em;
 	width:100%;
 }
 
 div.card div.left table tr th {
 	color:$cardh4;
 	font-size:18px;
+}
+
+div.card div.left table tr th.tier3 {
+	min-width:47px;
 }
 
 div.card div.left table tr td,
@@ -26,7 +29,6 @@ div.card div.left table tr.grey {
 }
 
 div.card div.left table tr td.table-text {
-	min-width:14em;
 	padding:0.66666667em;
 	text-align:left;
 }
@@ -56,7 +58,7 @@ div.card div.right div.button-container button {
 	border-radius:0.1875em;
 	display:block;
 	font-family:$regular;
-	height:50px;
+	height:3.125em;
 	margin-top:1em;
 	width:160px;
 }
