@@ -47,14 +47,17 @@
 @media only screen and (max-width:834px) {
 
 	div.card-container div.card div.left {
-		width:95%;
+		float:none;
+		margin:2.3em auto;
+		width:90%;
+
 	}
 
 	div.card-container div.card div.right {
-		width:92%;
+		margin:4.3em auto 0 auto;
+		width:90%;
 		height:5em;
-		float:left;
-		padding:2.3em 0 2.5em 1em;
+		float:none;
 	}
 
 	div.card-container div.card div.right div.dropdown {
@@ -81,17 +84,13 @@
 		font-size:3vw;
 	}
 
-	body section.plan-picker div.wrapper div.card-container div.card {
-		padding:0 5%;
-	}
-
 	body section.plan-picker div.wrapper div.card-container div.card div.left {
 		float:none;
 	}
 
 	div.card-container div.card div.right {
 		float:none;
-		margin:0 auto;
+		margin:4.3em auto 0 auto;
 	}
 }
 
@@ -103,12 +102,11 @@
 	}
 
 	div.card-container div.card div.right div.dropdown {
-		// margin-top:-4.5em;
 		display:none;
 	}
 
 	div.card-container div.card div.right div.button-container {
-		margin-top:-1.7em;
+		margin-top:1.5em;
 	}
 
 	button.dropbtn {

@@ -6,7 +6,7 @@ section.plan-picker div.wrapper div.card-container {
 	margin:0.8125em auto 0 auto;
 	max-width:70.0625em;
 	position:relative;
-	width:75%;
+	width:100%;
 }
 
 section.plan-picker div.wrapper div.card-container div.card {
@@ -15,9 +15,9 @@ section.plan-picker div.wrapper div.card-container div.card {
 	border-radius:0.25em;
 	height:auto;
 	margin:0 auto 1.25em auto;
-	padding:0 0 0 2.3em;
+	padding:0;
 	text-align:left;
-	width:95%;
+	width:100%;
 	display:none;
 }
 
@@ -38,7 +38,7 @@ section.plan-picker div.wrapper div.card-container div.card.bronze {
 }
 
 div.card div.left {
-	margin:2.3em auto;
+	margin:2.3em 0 2.3em 2em;
 	float:left;
 	// min-width:26.3333333em;
 	width:50%;
