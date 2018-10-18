@@ -3,7 +3,6 @@
 //rules
 
 section.faq div.wrapper div.container {
-	background-color:blue;
 	height:100px;
 	margin-top:7.9375em;
 	margin-bottom:6.08125em;
@@ -12,4 +11,13 @@ section.faq div.wrapper div.container {
 
 section.faq div.wrapper div.container p {
 	font-size:1.125em;
+}
+
+div.faq-box-container {
+	background-color:green;
+	float:left;
+	height:200px;
+	margin-bottom:0.875em;
+	position:relative;
+	width:68%;
 }
