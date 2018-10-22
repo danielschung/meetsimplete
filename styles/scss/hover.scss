@@ -39,3 +39,10 @@ div.metal-filter-container div.silver-container:hover,
 div.metal-filter-container div.bronze-container:hover {
 	border:1px solid $border-grey;
 }
+
+//FAQ
+button.faq-form-button:hover {
+	border:0.0625em solid $purple;
+	background-color:white;
+	color:$purple;
+}

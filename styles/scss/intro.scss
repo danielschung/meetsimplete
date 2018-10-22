@@ -23,7 +23,7 @@ div.zip-container {
 	padding:0;
 }
 
-input {
+input.intro-input {
 	border:1px solid $purple;
 	border-radius:0.3125em 0 0 0.3125em;
 	height:3.75em;
@@ -31,14 +31,14 @@ input {
 	width:35%;
 }
 
-input[type="text"] {
+input[type="text"].intro-input {
 	color:$purple;
 	font-family:$strong;
 	font-size:1em;
 	padding-left:2.0625em;
 }
 
-::placeholder {
+input.intro-input::placeholder {
 	color:$purple;
 }
 

@@ -90,7 +90,7 @@
 				<p class="intro-text">Simplete is a simple solution for complete coverage. Through a partnership with Health Alliance, Simplete puts the power of insurance decisions in the hands of Memorial, a trusted healthcare leader, to help decrease costs and provide patients better, more convenient care.</p>
 				<p class="zip-text">Find small group health insurance plans in your area</p>
 				<div class="zip-container">
-					<input type="text" name="zipcode" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'">
+					<input class="intro-input" type="text" name="zipcode" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'">
 					<button class="zipcode-button">Find Plans</button>
 				</div>
 			</div>
@@ -670,25 +670,109 @@
 	</section>
 
 	<section class="faq">
-		<div class="wrapper">
-			<div class="container">
+		<div class="wrapper faq header">
+			<div class="heading-container">
 				<h2>FAQ's</h2>
 				<p class="intro-text">How can we help you?</p>
 			</div>
-			<div class="faq-box-container">
+		</div>
+		<div class="wrapper faq body">
+			<div class="faq-box-container right">
+				<div class="faq-form-inner-container">
+					<h4>Still can't find what you need?</h4>
+					<input class="faq-input" type="text" name="name" placeholder="Name">
+					<input class="faq-input" type="text" name="email" placeholder="Email">
+					<input class="faq-input" type="text" name="question" placeholder="Ask a Question">
+				</div>
+				<button class="faq-form-button">Send Message</button>
+			</div>
+
+			<div class="faq-box-container left">
 				<div class="faq-box-container-inner">
-					<div class="text-container">
-						<h3>How is Simplete different from other health insurance plans?</h3>
+					<div class="faq-header-text-container">
+						<h4>How is Simplete different from other health insurance plans?</h4>
 						<i></i>
 					</div>
-					<div class="text-container">
+					<div class="faq-text-container clicked">
 						<p>Simplete is a new concept in healthcare delivery with the goal to offer complete coverage that is simple to navigate. It brings providers and health insurance to the table in a new way, all to benefit patients throughout their healthcare journey. Simplete plans are designed by providers with you and your employees in mind. The plans are priced to save employers money on premiums and when their employees stay in network they are rewarded by lower out of pocket costs and a simple process.</p>
 					</div>
 				</div>
-				<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
-			</div>			
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>What is a Tiered Provider Network?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>With a Tiered-Provider network, how much a member pays out-of-pocket for services depends on the provider they see. In the case of Simplete, there are three tiers—Memorial Tier 1, In-Network Tier 2, Out-of-network Tier 3. Members will pay the least out of pocket for Memorial Tier 1 providers. The Out-of-network Tier 3 is only available with the Simplete POS plans.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>What is the difference between Simplete plans?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>The HMO plans offer two levels of in-network coverage. While members must use an in-network provider, they have access to both Memorial Tier 1 and in-network Tier 2 providers. With lower premiums these plans offer the most value for employer groups. POS plans offer more flexibility. Members have access to Tier 1 and Tier 2 providers and pay less out of pocket when using these tiers. If members are willing to pay more out-of-pocket, they also have the opportunity to use out-of-network Tier 3 providers. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>Will my employees have to change doctors?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>In most cases, your employees will still have in-network access to their doctors. Memorial, Springfield Clinic and SIU primary care physicians are all in-network providers. If some of your employees do not have doctors within these groups, we offer POS plans that allow members to go out of network to see another physician. In the provider directory (link), Tier 1 and Tier 2 providers are identified with a badge.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>If this insurance plan is through Memorial, does that mean members can’t ever go to another hospital?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>The collaboration between the health system and insurance provider allows for lower premiums and less costly in-network coverage. Members will pay the least amount out-of-pocket by going to Memorial Health System when they receive care locally, but other hospitals are also included in the network.  And don’t worry! If a member has an emergency while out of town, they will be covered at the in-network benefit level. </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>Why is Simplete not available in my area?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>Simplete is a new, innovative approach to health insurance. Initially, it will only be offered in eight of Memorial Health System's core counties (Cass, Christian, Logan, Mason, Menard, Morgan, Sangamon, Scott). We hope to expand this innovative approach further in 2020.  </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="faq-box-container left">
+				<div class="faq-box-container-inner">
+					<div class="faq-header-text-container">
+						<h4>How can I purchase a Simplete Plan?</h4>
+						<i></i>
+					</div>
+					<div class="faq-text-container">
+						<p>You can purchase a Simplete Plan through Health Alliance directly or through our preferred insurance broker: Troxell (include contact info)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->		
 		</div>
-		
 	</section>
 
 	<footer>
