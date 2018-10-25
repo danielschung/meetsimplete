@@ -2,11 +2,12 @@
 
 //header
 
-div.inner-container a.get-in-touch:hover {
-	border:1px $white solid;
-}
+// div.inner-container a.get-in-touch:hover {
+// 	border:1px $purple-clear solid;
+// 	color:$purple-clear;
+// }
 
-div.inner-container a.get-a-quote:hover {
+div.inner-container a.request-a-quote:hover {
 	border:1px $purple solid;
 	background-color:$purple;
 }
@@ -27,6 +28,7 @@ div.card div.right div.button-container button.providers-button:hover {
 
 div.card div.right div.button-container button.enroll-button:hover {
 	background-color:$purple;
+
 }
 
 //filters

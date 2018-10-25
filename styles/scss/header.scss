@@ -23,7 +23,7 @@ nav a {
 	font-family:$strong;
 	font-size:0.875em;
 	padding:0 0.5em;
-	margin:0 1.24285714em;
+	margin:0 1em;
 	text-decoration:none;
 	@extend .hover;
 }
@@ -40,20 +40,34 @@ nav div.container div.inner-container {
 }
 
 div.inner-container a.get-in-touch {
-	border:1px solid rgba(0, 0, 0, 0);
+	border:1px $white solid;
 	border-radius:0.35714286em;
-	padding:1.14285714em;
+	padding:1em;
 	@extend .hover;
 }
 
 
-div.inner-container a.get-a-quote{
+div.inner-container a.request-a-quote{
 	background-color:$purple-clear;
 	border:1px $purple-clear solid;
 	border-radius:0.35714286em;
 	color:$white;
-	padding:1.14285714em 1.42em;
+	padding:1em;
 	@extend .hover;
+}
+
+a.phone-number.browser {
+	// padding:1.14285714em 1.42em;
+}
+
+
+a.phone-number.mobile {
+	visibility:hidden;
+	font-family:$light;
+	font-size:0.7em;
+	color:$white;
+	text-decoration:none;
+
 }
 
 div.wrapper div.text-container {

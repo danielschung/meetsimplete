@@ -34,10 +34,7 @@ div.wrapper.faq.body div.faq-box-container.left {
 	margin:0.875em 0 0 0;
 	position:relative;
 	width:58%;
-}
-
-section.faq div.wrapper.faq.body div.faq-box-container div.faq-box-container-inner div.text-container h4 {
-	background-color:red;
+	background-color:blue;
 }
 
 div.faq-box-container-inner {
@@ -47,11 +44,26 @@ div.faq-box-container-inner {
 
 div.faq-header-text-container {
 	background-color:$white;
-	color:$purple;
-	font-family:$regular;
+	color:$text;
+	font-family:$light;
 	font-size:1.125em;
 	line-height:1.4375em;
 	padding:1.875em 2.3125em;
+	cursor:pointer;
+}
+
+div.faq-header-text-container h4 {
+	cursor:pointer;
+	-moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+   	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+ 	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+div.faq-header-text-container.clicked {
+	color:$purple;
+	font-family:$regular;
 }
 
 div.faq-text-container {
@@ -71,6 +83,7 @@ div.faq-text-container p {
 
 div.faq-text-container.clicked {
 	display:block;
+	color:$text;
 }
 
 //faq form rules
@@ -105,6 +118,8 @@ div.faq-form-inner-container h4 {
 input.faq-input {
 	border:none;
 	border-bottom:1px solid $border-grey;
+	color:$text;
+	font-family:$light;
 	margin:0.7em 0;
 	padding:0.7em 0;
 	width:100%;
@@ -114,6 +129,13 @@ input.faq-input::placeholder {
 	color:$border-grey;
 	font-family:$light;
 
+}
+
+input.faq-input:-webkit-autofill,
+input.faq-input:-webkit-autofill:hover, 
+input.faq-input:-webkit-autofill:focus {
+	background-color:$white;
+	transition: background-color 5000s ease-in-out 0s;
 }
 
 button.faq-form-button {
