@@ -1,13 +1,13 @@
 @import 'global';
 
 @media only screen and (max-width:1220px) {
-	header {
+	header.home {
 		background-position: 0 0;
 		background-size:87em;
 		height:42em;
 	}
 
-	div.wrapper div.text-container {
+	div.wrapper div.text-container.home {
 		position:relative;
 		float:left;
 		right:0;
@@ -47,11 +47,11 @@
 }
 
 @media only screen and (max-width:848px) {
-	header {
+	header.home {
 		background-position: 17% 0;
 	}
 
-	header div.wrapper,
+	header.home div.wrapper,
 	section div.wrapper {
 		padding:0 1em;
 	}
@@ -85,21 +85,21 @@
 }
 
 @media only screen and (max-width:737px) {
-	header {
+	header.home {
 		background-position: 53.4% 20%;
 	}
 
-	div.wrapper div.text-container h1 {
+	div.wrapper div.text-container.home h1 {
 		font-size:7vw;
 	}
 
-	div.wrapper div.text-container {
+	div.wrapper div.text-container.home {
 		float:none;
 		text-align:center;
 		transform:translateY(17em);
 	}
 
-	div.wrapper .text-container h1 {
+	div.wrapper .text-container.home h1 {
 		margin:0 auto;
 		position:relative;
 		top:-0.5em;

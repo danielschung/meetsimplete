@@ -1,7 +1,7 @@
 @import 'global';
 
 //rules
-header {
+header.home {
 	background-color:$black;
 	background-image: url("../../assets/home.jpg");
 	background-repeat:no-repeat;
@@ -56,11 +56,6 @@ div.inner-container a.request-a-quote{
 	@extend .hover;
 }
 
-a.phone-number.browser {
-	// padding:1.14285714em 1.42em;
-}
-
-
 a.phone-number.mobile {
 	visibility:hidden;
 	font-family:$light;
@@ -70,7 +65,7 @@ a.phone-number.mobile {
 
 }
 
-div.wrapper div.text-container {
+div.wrapper div.text-container.home {
 	float:right;
 	position:absolute;
 	right:10%;
@@ -96,5 +91,46 @@ img.arrow {
 	transform: rotate(180deg);
 	width:1.5em;
 }
+
+//about header rules
+header.about {
+	background-color:$black;
+	background-image: url("../../assets/about.jpg");
+	background-repeat:no-repeat;
+	background-position: 32% 40%;
+	background-size:147em;
+	height:50em;
+}
+
+header.about div.wrapper div.text-container.about {
+	float:left;
+	height:3.125em;
+	margin:0 auto;
+	max-width:90em;
+	max-width:41.125em;
+}
+
+div.text-container.about {
+	position:relative;
+	top:8.5625em;
+	left:10%;
+}
+
+div.text-container.about h2 {
+	color:$white;
+	font-family:$light;
+	font-size:1.5em;
+	line-height:1.375em;
+	margin:1.5em 0;
+}
+
+div.text-container.about p {
+	color:$white;
+	font-family:$light;
+	font-size:1.25em;
+	line-height:1.65em;
+}
+
+
 
 
