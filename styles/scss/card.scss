@@ -56,6 +56,10 @@ div.card div.left h4 {
 	font-family:$regular;
 }
 
+div.card div.right div.button-container a {
+	text-decoration:none;
+}
+
 //filtering card rules
 
 section.plan-picker div.wrapper div.card-container div.card.active {
