@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/meetsimplete/precache-manifest.7547c60571616d1b84f220107d8c5428.js"
+  "/meetsimplete/quote/precache-manifest.80320ad04589e115607bd6623dabd6be.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/meetsimplete/index.html", {
+workbox.routing.registerNavigationRoute("/meetsimplete/quote/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
