@@ -23,37 +23,36 @@ div.zip-container {
 	padding:0;
 }
 
-input.intro-input {
-	border:1px solid $purple;
-	border-radius:0.3125em 0 0 0.3125em;
-	height:3.75em;
-	padding-left:2.0625em;
-	width:35%;
-}
+// input.intro-input {
+// 	border:1px solid $purple;
+// 	border-radius:0.3125em 0 0 0.3125em;
+// 	height:3.75em;
+// 	padding-left:2.0625em;
+// 	width:35%;
+// }
 
-input[type="text"].intro-input {
-	color:$purple;
-	font-family:$strong;
-	font-size:1em;
-	padding-left:2.0625em;
-}
+// input[type="text"].intro-input {
+// 	color:$purple;
+// 	font-family:$strong;
+// 	font-size:1em;
+// 	padding-left:2.0625em;
+// }
 
-input.intro-input::placeholder {
-	color:$purple;
-}
+// input.intro-input::placeholder {
+// 	color:$purple;
+// }
 
-input:focus, button:focus {
-	outline:0;
-}
+// input:focus, button:focus {
+// 	outline:0;
+// }
 
 button.zipcode-button {
 	background-color:$purple-clear;
 	border:1px solid $purple-clear;
-	border-radius:0 0.3125em 0.3125em 0;
+	border-radius:0.3125em;
 	color:$white;
 	font-family:$strong;
 	padding:1.3125em 2.0625em;
-	width:145px;
 	margin-left:-0.3em;
 	@extend .hover;
 }
