@@ -53,21 +53,21 @@ section {
     -webkit-transition: all .2s ease-in-out;
 }
 
-h1 {
+h1.main {
 	color:$white;
 	font-family:$light;
 	font-size:3em;
 	line-height:1.25em;
 }
 
-h2 {
+h2.main {
 	color:$black;
 	font-family:$light;
 	font-size:2.5em;
 	margin-bottom:0.4925em;
 }
 
-h3 {
+h3.main {
 	font-family:$light;
 	margin:0;
 	padding:0;

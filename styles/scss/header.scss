@@ -43,6 +43,7 @@ div.inner-container a.get-in-touch {
 	border:1px $white solid;
 	border-radius:0.35714286em;
 	padding:1em;
+	text-decoration:none;
 	@extend .hover;
 }
 
@@ -53,6 +54,7 @@ div.inner-container a.request-a-quote{
 	border-radius:0.35714286em;
 	color:$white;
 	padding:1em;
+	text-decoration:none;
 	@extend .hover;
 }
 
