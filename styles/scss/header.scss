@@ -17,6 +17,8 @@ nav {
 nav div.container {
 	height:2.6875em;
 	max-width:none;
+	padding-left:15px;
+	padding-right:15px;
 }
 
 nav a {
@@ -103,6 +105,11 @@ header.about {
 	background-position: 32% 40%;
 	background-size:147em;
 	height:50em;
+}
+
+header.about div.wrapper nav div.container {
+	padding-left:46.9px;
+	padding-right:46.9px;
 }
 
 header.about div.wrapper div.text-container.about {
