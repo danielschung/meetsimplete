@@ -34,7 +34,6 @@ div.wrapper.faq.body div.faq-box-container.left {
 	margin:0.875em 0 0 0;
 	position:relative;
 	width:58%;
-	background-color:blue;
 }
 
 div.faq-box-container-inner {
@@ -93,12 +92,13 @@ div.wrapper.faq.body div.faq-box-container.right {
 	box-shadow: 0 0 17px 1px rgba(218,218,218,0.5);
 	font-family:$regular;
 	float:right;
-	height:387px;
+	height:150px;
 	margin:0.875em 0 0 0;
 	width:40%;
 }
 
 div.faq-form-inner-container {
+	height:1.5em;
 	margin:0 auto;
 	position:relative;
 	text-align:center;
@@ -142,12 +142,13 @@ button.faq-form-button {
 	background-color:$purple-clear;
 	border:0.0625em;
 	border-radius:0.1875em;
+	cursor:pointer;
 	display:block;
 	font-family:$regular;
 	height:3.125em;
 	margin:0 auto;
 	position:relative;
-	top:100px;
+	text-decoration:none;
 	width:160px;
 	color:$white;
 	@extend .hover;

@@ -4,66 +4,104 @@
 	<meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Request a Quote</title>
+	<title>Get In Touch</title>
 	<link rel="stylesheet" type="text/css" href="./styles/css/form.css">
 	<link rel="stylesheet" type="text/css" href="./styles/css/mobile-form.css">
-	<link href="https://fonts.googleapis.com/css?family=Krub:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./styles/css/global.css">
+	<link rel="stylesheet" type="text/css" href="./styles/css/faq.css">
+	<style>
+		
+		@font-face {
+			font-family:"Museo-Sans-100";
+			src: url("./styles/fonts/MuseoSans_100.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-300";
+			src: url("./styles/fonts/MuseoSans_300.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-500";
+			src: url("./styles/fonts/MuseoSans_500.ttf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-700";
+			src: url("./styles/fonts/MuseoSans_700.ttf");
+		}
+
+	</style>
 
 <!--We need to have an additional indicator so we know which lead needs to go directly to Troxell and which one will need to go to HA.  The ownership will now default to Web Integration instead of being assigned.  I added both Form ID and Web Source to the form, will either one of these work?  I’ll need to know which field and value for leads that need to go to Troxell so I can assign those leads to the ‘Simplete SMGRP Memorial’ queue using the lead assignment rules. -->
 
 </head>
 <body>
-	<section class="form">
+	<section class="contact">
 		<div class="wrapper">
-			<div class="container">
-				<h1>Get in Touch</h1>
-				<h2>Let's talk.</h2>
+			<div class="nav-container">
+				<a href="index.html"><h1 class="go-back">Go Back</h1></a>
+			</div>
+			<div class="heading-container">
+				<h2 class="main">Get in Touch</h2>
+				<p class="intro-text">How can we help you?</p>
+			</div>
+			<div class="form">
 				<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-					<input type="hidden" name="oid" value="00Dg0000006Ngju">
-					<input type="hidden" name="retURL" value="http://healthalliance.org">
+					<div class="top-card">
+						<div class="inner-container">
+							<input type="hidden" name="oid" value="00Dg0000006Ngju">
+							<input type="hidden" name="retURL" value="http://healthalliance.org">
 
-					<input type="hidden" name="lead_source" value="Web Form - Simplete">
-					<input type="hidden" name="recordType" value="012U0000000UGjm">
-					<input type="hidden" name="00NU0000003Q92L" value="Fully Insured - Small Group (1-50)">
-					<input type="hidden" name="00Ng0000003xaHh" title="Simplete Group" value="1">
-					
-					<!--  ----------------------------------------------------------------------  --> 
-					
-					<!--  NOTE: These fields are optional debugging elements. Please uncomment these lines if you wish to test in debug mode.                          
-					
-					 <input type="hidden" name="debug" value=1>                              
-					 <input type="hidden" name="debugEmail" value="laurie.avery@healthalliance.org"> --> 
-					
-					<!--  ----------------------------------------------------------------------  -->
+							<input type="hidden" name="lead_source" value="Web Form - Simplete">
+							<input type="hidden" name="recordType" value="012U0000000UGjm">
+							<input type="hidden" name="00NU0000003Q92L" value="Fully Insured - Small Group (1-50)">
+							<input type="hidden" name="00Ng0000003xaHh" title="Simplete Group" value="1">
+							
+							<!--  ----------------------------------------------------------------------  --> 
+							
+							<!--  NOTE: These fields are optional debugging elements. Please uncomment these lines if you wish to test in debug mode.                          
+							
+							 <input type="hidden" name="debug" value=1>                              
+							 <input type="hidden" name="debugEmail" value="laurie.avery@healthalliance.org"> --> 
+							
+							<!--  ----------------------------------------------------------------------  -->
 
-					<select required id="00NU0000001bSbj" name="00NU0000001bSbj" title="Web Source" class="half">
-						<option value="Simplete - HA" selected>Contact Health Alliance</option>
-						<option value="Troxell - HA">Contact a Broker</option>
-					</select>
-					<select required id="contact_method" name="contact_method" class="half right" onchange="javascript:contactMethod();">
-						<option value="Email" selected>Follow-up by Email</option>
-						<option value="Phone">Follow-up by Phone</option>
-						<option value="Mail">Follow-up by Mail</option>
-					</select>
-
-					<h3>Personal Information</h3>
-					<div class="inner-container">
-						<input required id="first_name" name="first_name" type="text" placeholder="First Name" class="half">
-						<input required id="last_name" name="last_name" type="text" placeholder="Last Name" class="half right">
-
-						<input required id="company" name="company" type="text" placeholder="Company" class="half">
-						<input required id="employees" name="employees" type="number" value="" maxlength="2" max="50" min="1" placeholder="Total Employees" class="half right">
-
-						<input id="email" name="email" type="text" placeholder="Email" class="full conditional">
-
-						<input id="phone" name="phone" type="text" placeholder="Phone" class="full conditional">
-
-						<input id="street" name="street" placeholder="Street" class="half conditional"></input>
-						<input id="city" name="city" type="text" placeholder="City" class="half right conditional">
-						<input id="state" name="state" type="text" placeholder="State/Province" class="half conditional">
-						<input id="zip" name="zip" type="text" placeholder="Zip" class="half right conditional">
+							<select required id="00NU0000001bSbj" name="00NU0000001bSbj" title="Web Source" class="half drop-down">
+								<option value="Simplete - HA" selected>Contact Health Alliance</option>
+								<option value="Troxell - HA">Contact a Broker</option>
+							</select>
+							<select required id="contact_method" name="contact_method" class="half right drop-down" onchange="javascript:contactMethod();">
+								<option value="Email" selected>Follow-up by Email</option>
+								<option value="Phone">Follow-up by Phone</option>
+								<option value="Mail">Follow-up by Mail</option>
+							</select>
+						</div>
 					</div>
-					<button type="submit" name="submit">Submit</button>
+					<div class="bottom-card">
+						<div class="inner-container">
+							<h4 class="main">Personal Information</h4>
+							<div class="inner-container">
+								<input required id="first_name" name="first_name" type="text" placeholder="First Name" class="half">
+								<input required id="last_name" name="last_name" type="text" placeholder="Last Name" class="half right">
+
+								<input required id="company" name="company" type="text" placeholder="Company" class="half">
+								<input required id="employees" name="employees" type="number" value="" maxlength="2" max="50" min="1" placeholder="Total Employees" class="half right">
+
+								<input id="email" name="email" type="text" placeholder="Email" class="full conditional">
+
+								<input id="phone" name="phone" type="text" placeholder="Phone" class="full conditional">
+
+								<input id="street" name="street" placeholder="Street" class="half conditional"></input>
+								<input id="city" name="city" type="text" placeholder="City" class="half right conditional">
+								<input id="state" name="state" type="text" placeholder="State/Province" class="half conditional">
+								<input id="zip" name="zip" type="text" placeholder="Zip" class="half right conditional">
+								<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
+							</div>
+						</div>
+						<div class="clear"></div> <!--This is inserted so that parent can read height:auto-->
+					</div>
+					<button class="faq-form-button contact type="submit" name="submit">Submit</button>
 				</form>
 			</div>
 		</div>
